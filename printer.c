@@ -15,6 +15,7 @@ int printer(char format, va_list args)
 		{'s', print_str},
 	};
 
+	print_count = 0;
 	for (i = 0; i < 2; i++)
 	{
 		if (format == formats[i].specifier)
