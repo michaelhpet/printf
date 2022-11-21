@@ -27,7 +27,13 @@ int _vprintf(const char *format, va_list args)
 		}
 		else if (state == 1)
 		{
-			print_count += printer(*format, args);
+			if (*format == '%')
+			{
+				_putchar('%');
+				print_count++;
+			}
+			else
+				print_count += printer(*format, args);
 			state = 0;
 		}
 

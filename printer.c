@@ -13,10 +13,9 @@ int printer(char format, va_list args)
 	format_t formats[] = {
 		{'c', print_char},
 		{'s', print_str},
-		{'%', print_char},
 	};
 
-	for (i = 0; i < 3; i++)
+	for (i = 0; i < 2; i++)
 	{
 		if (format == formats[i].specifier)
 			print_count = formats[i].printer(args);
