@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * printer - prints according to format
@@ -47,9 +48,16 @@ int print_str(va_list args)
 	char *str;
 
 	str = va_arg(args, char *);
-	len = _strlen(str);
 
-	_putstr(str);
+	if (str == NULL)
+	{
+		_putstr("(null)");
+		return(6);
+	}
+
+	len = _strlen(str);
+	if (*str)
+		_putstr(str);
 
 	return (len);
 }
