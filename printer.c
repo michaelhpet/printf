@@ -52,7 +52,7 @@ int print_str(va_list args)
 	if (str == NULL)
 	{
 		_putstr("(null)");
-		return(6);
+		return (6);
 	}
 
 	len = _strlen(str);
