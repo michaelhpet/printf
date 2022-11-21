@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _printf - produces output according to a format
@@ -18,6 +17,5 @@ int _printf(const char *format, ...)
 
 	va_end(args);
 
-	printf("Char count: %d\n", print_count);
 	return (print_count);
 }
