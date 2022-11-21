@@ -2,7 +2,7 @@
 
 /**
  * printer - prints according to format
- * @s: format
+ * @format: string to print
  * @args: argument listi
  * Return: number of chars printed
 */
@@ -37,7 +37,7 @@ int print_char(va_list args)
 }
 
 /**
- * print_string - prints a string using a va_list
+ * print_str - prints a string using a va_list
  * @args: variadic args list
  * Return: number of characters printed
 */

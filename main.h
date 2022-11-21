@@ -7,7 +7,7 @@
 /**
  * struct format - format specifier
  * @specifier: char specifying format
- * @type: correspondin type for specifier
+ * @printer: function to print arg for specifier
 */
 
 struct format
