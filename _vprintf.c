@@ -10,7 +10,6 @@
 int _vprintf(const char *format, va_list args)
 {
 	int state, print_count;
-	char *str;
 
 	state = 0;
 	print_count = 0;
@@ -28,19 +27,7 @@ int _vprintf(const char *format, va_list args)
 		}
 		else if (state == 1)
 		{
-			switch (*format)
-			{
-				case 'c':
-					_putchar(va_arg(args, int));
-					print_count++;
-					break;
-				case 's':
-					str = va_arg(args, char *);
-					_putstr(str);
-					print_count += _strlen(str);
-					break;
-			}
-
+			print_count += printer(*format, args);
 			state = 0;
 		}
 
