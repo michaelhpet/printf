@@ -13,10 +13,12 @@ int printer(char format, va_list args)
 	format_t formats[] = {
 		{'c', print_char},
 		{'s', print_str},
+		{'i', _printint},
+		{'d', _printdec},
 	};
 
 	print_count = 0;
-	for (i = 0; i < 2; i++)
+	for (i = 0; i < 4; i++)
 	{
 		if (format == formats[i].specifier)
 			print_count = formats[i].printer(args);
