@@ -30,5 +30,6 @@ int _strlen(char *s);
 int printer(char format, va_list args);
 int print_char(va_list args);
 int print_str(va_list args);
+int is_specifier(char ch);
 
 #endif /* _MAIN_H_ */

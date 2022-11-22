@@ -17,7 +17,7 @@ int _vprintf(const char *format, va_list args)
 	{
 		if (state == 0)
 		{
-			if (*format == '%')
+			if (*format == '%' && is_specifier(*(format + 1)) == 1)
 				state = 1;
 			else
 			{
@@ -41,4 +41,24 @@ int _vprintf(const char *format, va_list args)
 	}
 
 	return (print_count);
+}
+
+/**
+ * is_specifier - checks if a char is a format specifier
+ * @ch: character to check
+ * Return: 1 if ch is a specifier, 0 otherwise
+*/
+int is_specifier(char ch)
+{
+	int i;
+	char specifiers[] = {'c', 's', '%'};
+
+	
+	for (i = 0; i < 3; i++)
+	{
+		if (specifiers[i] == ch)
+			return (1);
+	}
+
+	return (0);
 }
