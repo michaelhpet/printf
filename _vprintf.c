@@ -53,7 +53,6 @@ int is_specifier(char ch)
 	int i;
 	char specifiers[] = {'c', 's', '%'};
 
-	
 	for (i = 0; i < 3; i++)
 	{
 		if (specifiers[i] == ch)
