@@ -15,10 +15,11 @@ int printer(char format, va_list args)
 		{'s', print_str},
 		{'i', print_int},
 		{'d', print_int},
+		{'b', print_bin},
 	};
 
 	print_count = 0;
-	for (i = 0; i < 4; i++)
+	for (i = 0; i < 5; i++)
 	{
 		if (format == formats[i].specifier)
 			print_count = formats[i].printer(args);

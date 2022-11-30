@@ -19,5 +19,8 @@ int main(void)
     printf("another number: %d\n", 8943);
     _printf("another number: %d\n", 8943);
 
+    printf("Binary: %b\n", 85);
+    _printf("Binary: %b\n", 85);
+
     return (0);
 }

@@ -51,9 +51,9 @@ int _vprintf(const char *format, va_list args)
 int is_specifier(char ch)
 {
 	int i;
-	char specifiers[] = {'c', 's', '%', 'i', 'd'};
+	char specifiers[] = {'c', 's', '%', 'i', 'd', 'b'};
 
-	for (i = 0; i < 5; i++)
+	for (i = 0; i < 6; i++)
 	{
 		if (specifiers[i] == ch)
 			return (1);
