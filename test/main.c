@@ -22,5 +22,11 @@ int main(void)
     printf("Binary: %b\n", 85);
     _printf("Binary: %b\n", 85);
 
+    printf("Unsigned: %u\n", 1992);
+    _printf("Unsigned: %u\n", 1992);
+
+    printf("Octal: %o\n", 88);
+    _printf("Octal: %o\n", 88);
+
     return (0);
 }

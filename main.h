@@ -36,5 +36,7 @@ int count_digits(unsigned int number);
 int _pow(int base, int exp);
 int print_bin(va_list args);
 int count_bits(unsigned int num);
+int print_oct(va_list args);
+int count_octs(unsigned int num);
 
 #endif /* _MAIN_H_ */
