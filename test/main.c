@@ -11,12 +11,13 @@ int main(void)
 {
     _printf("Character:[%c]\n", 'H');
     _printf("String:[%s]\n", "I am a string !");
-    printf("Char: %c\n", 300);
-    _printf("Char: %c\n", 300);
-    printf("Char: %c\n", -100);
-    _printf("Char: %c\n", -100);
     printf("This is a normal %\n");
     _printf("This is a normal %\n");
+
+    printf("a number: %i\n", -3106);
+    _printf("a number: %i\n", -3106);
+    printf("another number: %d\n", 8943);
+    _printf("another number: %d\n", 8943);
 
     return (0);
 }

@@ -2,7 +2,7 @@
 
 /**
  * print_int - prints an integer using va_list args
- * @n: integer to print
+ * @args: variadic arguments' list
  * Return: number of characters printed
  */
 int print_int(va_list args)
