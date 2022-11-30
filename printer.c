@@ -13,8 +13,8 @@ int printer(char format, va_list args)
 	format_t formats[] = {
 		{'c', print_char},
 		{'s', print_str},
-		{'i', _printint},
-		{'d', _printdec},
+		{'i', print_int},
+		{'d', print_int},
 	};
 
 	print_count = 0;

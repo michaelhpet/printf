@@ -31,6 +31,8 @@ int printer(char format, va_list args);
 int print_char(va_list args);
 int print_str(va_list args);
 int is_specifier(char ch);
-int _printint(va_list args);
-int _printdec(va_list args);
+int print_int(va_list args);
+int count_digits(unsigned int number);
+int _pow(int base, int exp);
+
 #endif /* _MAIN_H_ */
